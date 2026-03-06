@@ -1,4 +1,4 @@
-# Credit Risk PD Proxy + IRB-Style Policy + Traditional WoE Scorecard (PDO 300–850)
+# Credit Risk PD Proxy + IRB-Style Policy + Governance + Traditional WoE Scorecard (PDO 300–850)
 
 This repository is a **GitHub-ready credit risk portfolio project** that demonstrates:
 
