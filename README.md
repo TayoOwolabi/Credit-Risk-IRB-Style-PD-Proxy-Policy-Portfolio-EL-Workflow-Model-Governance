@@ -6,8 +6,7 @@ This repository is a **GitHub-ready credit risk portfolio project** that demonst
 - **PD proxy modeling** (because the dataset target is *loan approval*, not default)
 - **Portfolio risk metrics** (EAD / LGD / EL)
 - **Model governance** (PSI, backtesting tables, challenger model, cutoff sensitivity)
-- **Traditional bank scorecard**: **Binning → WoE → Logistic Regression → PDO score scaling (300–850)**
-- **Score bands (A/B/C/D/E)**, **pricing tiers**, and **reason codes** (Top-3 drivers) for declines
+
 
 > ⚠️ Important: The dataset target `Personal.loan` is **loan approval** (1=approved, 0=not approved).  
 > A true Basel/IRB PD model requires a **default label** (1=default/bad).  
