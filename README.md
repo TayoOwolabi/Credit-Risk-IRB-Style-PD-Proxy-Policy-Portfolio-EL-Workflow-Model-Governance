@@ -1,16 +1,73 @@
-# Credit Risk PD Proxy + IRB-Style Policy + Governance + Traditional WoE Scorecard (PDO 300–850)
+# (1) Summary
 
-This repository is a **GitHub-ready credit risk portfolio project** that demonstrates:
+Financial institutions must continuously evaluate borrower risk while maintaining portfolio stability and regulatory compliance.
 
-- **IRB-style development workflow** (DEV/VAL/TEST split, calibration, policy layer)
-- **PD proxy modeling** (because the dataset target is *loan approval*, not default)
-- **Portfolio risk metrics** (EAD / LGD / EL)
-- **Model governance** (PSI, backtesting tables, challenger model, cutoff sensitivity)
+This project builds a credit risk decision framework that:
 
+• Estimates borrower Probability of Default (PD)
+• Applies credit policy thresholds for lending decisions
+• Simulates portfolio expected losses
+• Evaluates risk exposure under varying economic conditions
 
-> ⚠️ Important: The dataset target `Personal.loan` is **loan approval** (1=approved, 0=not approved).  
-> A true Basel/IRB PD model requires a **default label** (1=default/bad).  
-> In this project, we compute a **PD proxy**: `prob_def_proxy = 1 - P(approved)`.
+The model demonstrates how predictive analytics and financial modeling can support risk-aware lending strategies, portfolio monitoring, and capital planning.
+
+# (2) Business Problem
+
+Banks and lending institutions face a core challenge:
+
+How can credit decisions be optimized while controlling portfolio risk and expected losses?
+
+Traditional credit approval methods often rely on static borrower metrics that may not fully capture changing risk conditions.
+
+Key challenges include:
+
+• Identifying high-risk borrowers before loan approval
+• Estimating expected credit losses across a loan portfolio
+• Aligning lending policies with institutional risk appetite
+• Monitoring portfolio risk exposure under economic stress scenarios
+
+This project addresses these challenges by developing a data-driven credit risk modeling framework.
+
+# (3) Data & Methodology
+
+The modeling approach follows standard credit risk analytics methodology.
+
+# Data Inputs
+
+Borrower features used in the model include:
+
+• income
+• debt-to-income ratio
+• credit history indicators
+• loan amount
+• repayment history
+
+# Modeling Techniques
+
+# The framework uses:
+
+• Weight of Evidence (WoE) feature transformation
+• Logistic regression for PD estimation
+• Portfolio expected loss simulation
+• Risk segmentation and borrower classification
+
+These techniques reflect methodologies commonly used in retail credit risk modeling and Basel internal rating systems.
+
+# (4) Financial Model
+
+The credit risk model estimates the Probability of Default (PD) for each borrower.
+
+The expected loss framework follows standard financial risk modeling principles.
+
+Expected Loss (EL) = PD X LGD X EAD
+         
+Where:
+
+PD = Probability of Default
+LGD = Loss Given Default
+EAD = Exposure at Default
+
+The model calculates expected losses across the loan portfolio, enabling financial institutions to evaluate potential risk exposure.
 
 ---
 
