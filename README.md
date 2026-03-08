@@ -69,6 +69,63 @@ EAD = Exposure at Default
 
 The model calculates expected losses across the loan portfolio, enabling financial institutions to evaluate potential risk exposure.
 
+# (5) Risk Analysis
+
+Borrowers are segmented based on their predicted risk levels.
+
+Risk categories may include:
+
+| Risk Category | PD Range |
+| ------------- | -------- |
+| Low Risk      | PD < 2%  |
+| Moderate Risk | 2% – 5%  |
+| Elevated Risk | 5% – 10% |
+| High Risk     | >10%     |
+
+Risk segmentation allows lenders to:
+
+* identify vulnerable borrowers
+* adjust pricing strategies
+* control portfolio concentration risk
+
+# (6) Governance Framework
+Risk models require structured governance to ensure reliability and regulatory compliance.
+
+# Model Purpose
+
+This model supports:
+
+• credit approval decisions
+• portfolio risk monitoring
+• capital risk evaluation
+
+# Model Validation
+
+Validation techniques include:
+
+• ROC-AUC model performance evaluation
+• out-of-sample testing
+• population stability monitoring
+
+Model Monitoring
+
+Ongoing monitoring ensures model reliability through
+• PD calibration tracking
+• portfolio default rate monitoring
+• model drift analysis
+
+These governance practices align with Basel model risk management principles.
+
+# (8) Key Insights
+
+The analysis highlights several portfolio risk insights.
+
+High borrower leverage and weak repayment history significantly increase default risk.
+
+Portfolio simulations indicate that small increases in macroeconomic stress factors can substantially increase expected losses, emphasizing the importance of proactive risk monitoring.
+
+Risk segmentation enables lenders to adjust credit policies and optimize portfolio risk-return balance.
+
 ---
 
 ## Repo Structure
